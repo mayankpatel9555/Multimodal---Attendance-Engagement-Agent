@@ -25,19 +25,23 @@ This folder contains the interactive Streamlit dashboard, system verification te
 ```bash
 cd "Multimodal---Attendance-Engagement-Agent/6. Interface , Testing and Deployment"
 ```
-### 2. Create a virtual environment
+### 2. Open directory
 ```bash
-python3 -m venv venv
+dir
 ```
-### 3. Activate the virtual environment
+### 3. Create a virtual environment
 ```bash
-source venv/bin/activate
+python -m venv venv
 ```
-### 4. Install project dependencies
+### 4. Activate the virtual environment
+```bash
+venv\Scripts\activate.bat
+```
+### 5. Install project dependencies
 ```bash
 pip install -r requirements.txt
 ```
-### 5. Launch the Streamlit application
+### 6. Launch the Streamlit application
 ```bash
 streamlit run app.py
 ```
