@@ -24,6 +24,7 @@ This folder contains the interactive Streamlit dashboard, system verification te
 ### 1. Set Up Environment
 ```bash
 python -m venv venv
+venv\Scripts\activate.bat
 ```
 ### 2. Install Dependencies
 ```bash
