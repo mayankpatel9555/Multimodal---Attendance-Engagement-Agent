@@ -1,0 +1,65 @@
+# ==============================================================================
+# requirements.txt
+# AI-Based Smart Engagement Monitoring System
+# SmartBridge Skill Wallet Capstone Project
+#
+# Target Python version : 3.10 or 3.11 (64-bit)
+# Install               : pip install -r requirements.txt
+# Recommended           : use a virtual environment
+#                         python -m venv venv
+#                         source venv/bin/activate      (Linux/macOS)
+#                         venv\Scripts\activate         (Windows)
+# ==============================================================================
+
+
+# ------------------------------------------------------------------------------
+# Computer Vision
+# Face/pose/gaze detection and frame processing for engagement analysis
+# ------------------------------------------------------------------------------
+opencv-python==4.9.0.80
+mediapipe==0.10.14
+numpy==1.26.4            # pinned below 2.0 for MediaPipe / OpenCV compatibility
+
+
+# ------------------------------------------------------------------------------
+# Audio Processing
+# Microphone capture, voice activity and speech feature extraction
+# ------------------------------------------------------------------------------
+librosa==0.10.2.post1
+PyAudio==0.2.14          # needs PortAudio (Linux: sudo apt install portaudio19-dev)
+sounddevice==0.4.7
+
+
+# ------------------------------------------------------------------------------
+# Backend and API
+# REST endpoints serving engagement data to the frontend
+# ------------------------------------------------------------------------------
+Flask==3.0.3
+Flask-Cors==4.0.1
+Werkzeug==3.0.3
+
+
+# ------------------------------------------------------------------------------
+# Data Processing, Analytics and Reporting
+# Session analytics, charts, and Excel / PDF report generation
+# ------------------------------------------------------------------------------
+pandas==2.2.2
+matplotlib==3.8.4
+openpyxl==3.1.5
+reportlab==4.2.2
+
+
+# ------------------------------------------------------------------------------
+# Machine Learning Utilities
+# Engagement classification and model persistence
+# ------------------------------------------------------------------------------
+scikit-learn==1.5.1
+joblib==1.4.2
+
+
+# ==============================================================================
+# Notes
+# - Versions are pinned for reproducibility; upgrade and re-test together.
+# - Verify the environment after installation:  pip check
+# - On Windows, if PyAudio fails to build, use:  pip install pipwin && pipwin install pyaudio
+# ==============================================================================
