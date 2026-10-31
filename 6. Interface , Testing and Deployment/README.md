@@ -21,24 +21,28 @@ This folder contains the interactive Streamlit dashboard, system verification te
 
 ## 🚀 How to Run Locally
 
-### 1. Set Up Environment
+### 1. Enter the specific deployment directory
 ```bash
-python -m venv venv
-venv\Scripts\activate.bat
+cd "Multimodal---Attendance-Engagement-Agent/6. Interface , Testing and Deployment"
 ```
-### 2. Install Dependencies
+### 2. Create a virtual environment
+```bash
+python3 -m venv venv
+```
+### 3. Activate the virtual environment
+```bash
+source venv/bin/activate
+```
+### 4. Install project dependencies
 ```bash
 pip install -r requirements.txt
 ```
-### 3. Start the Application
+### 5. Launch the Streamlit application
 ```bash
 streamlit run app.py
 ```
-app.py: Streamlit application code.
 
-requirements.txt: Python package dependencies.
 
-README.md: Project documentation and setup guide.
 
 
 
